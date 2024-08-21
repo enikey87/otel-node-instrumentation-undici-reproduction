@@ -1,4 +1,6 @@
-# Bug
+## Bug
+
+Minimal reproduction and workaround for https://github.com/open-telemetry/opentelemetry-js-contrib/issues/2391.
 
 When using [instrumentation-undici](https://github.com/open-telemetry/opentelemetry-js-contrib/tree/main/plugins/node/instrumentation-undici)
 with `{ enabled: true }`, like in `getNodeAutoInstrumentations({'@opentelemetry/instrumentation-undici': { enabled: true } })`,
