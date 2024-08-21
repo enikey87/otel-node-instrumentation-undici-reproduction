@@ -1,0 +1,20 @@
+{
+  "name": "otel-node-instrumentation-undici-reproduction",
+  "version": "1.0.0",
+  "description": "Minimal reproduction of missing spans from instrumentation-undici used with auto-instrumentations-node",
+  "scripts": {
+    "start:fixed": "node --import ./src/telemetry_fixed.mjs ./src/fetch.mjs",
+    "start:issue": "node --import ./src/telemetry_issue.mjs ./src/fetch.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@opentelemetry/api": "1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "0.49.1",
+    "@opentelemetry/sdk-metrics": "1.25.1",
+    "@opentelemetry/sdk-node": "0.52.1"
+  },
+  "engines": {
+    "node": ">=20.10"
+  }
+}
